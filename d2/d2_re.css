@@ -1,0 +1,48 @@
+html, body{
+    margin : 50px;
+}
+
+.title{
+    color : red;
+}
+
+#mainCite {
+    font-weight: bold;
+    background-color: black;
+    color : white;
+}
+
+
+#internet, #browser{
+    font-weight: bold;
+}
+
+input[type="button"]{
+    border : 1px solid blue;
+}
+
+div > p{
+    border: 1px solid green;
+}
+
+div > p:hover{
+    background-color: aqua;
+}
+
+.box {
+    background-color: blueviolet;
+    width : 50px;
+    height : 50px;
+}
+
+#box1{
+    padding : 0px;
+}
+
+#box2{
+    padding : 50px;
+}
+
+#box3{
+    margin : 50px;
+}

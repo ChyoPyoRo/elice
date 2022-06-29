@@ -1,0 +1,33 @@
+.navigation{
+    background-color: #8A2BE2;
+    width : 100%;
+    height : 40px;
+    font-size : 100%;
+    font-weight: bold;
+    color : black;
+    text-align: center;
+}
+
+nav{
+    display : flex;
+}
+
+
+.title{
+    
+    font-weight: bold;
+}
+
+footer{
+    background-color: gray;
+    margin-top: 30px;
+}
+
+a {
+    text-decoration-line:none;
+}
+
+.sub-container {
+    display : grid;
+    grid-template-columns: 1fr 1fr;
+}
