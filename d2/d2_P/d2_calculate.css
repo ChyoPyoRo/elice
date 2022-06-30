@@ -1,0 +1,37 @@
+
+
+
+ table{
+    background-color: #660099;
+    margin-left : auto;
+    margin-right : auto;
+    width : 200px;
+    height : 300px;
+    color : white;
+    text-align: center;
+    font-size: 20px;
+    border : solid 3px #a840ff;
+}
+
+
+
+td{
+    border : solid 2px black;
+    background-color: blueviolet;
+    border-radius: 10%;
+}
+
+.ac {
+    background-color: #8e00ff;
+    text-align: center;
+
+}
+
+.sign {
+    background-color: #6f00cc;
+}
+
+td:last-child {
+    background-color: #6f00cc;
+}
+
