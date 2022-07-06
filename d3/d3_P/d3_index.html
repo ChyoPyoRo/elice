@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p style="border: 1px solid black">bla bla</p>
+    <input type="button" value="공부하기" onclick="clickButton()" />
+    <input type="button" value="외부" onclick="clickButton2()" />
+    <input
+      type="button"
+      value="night"
+      onclick="
+  document.querySelector('body').style.backgroundColor = 'black';
+  document.querySelector('body').style.color = 'white';
+  document.querySelector('p').style.borderColor = 'white';
+  "
+    />
+    <input
+      type="button"
+      value="day"
+      onclick="
+  document.querySelector('body').style.backgroundColor = 'white';
+  document.querySelector('body').style.color = 'black';
+  document.querySelector('p').style.borderColor = 'black';
+  "
+    />
+
+    <script>
+      function clickButton() {
+        alert("internal 방식!");
+      }
+
+      let number1 = 3;
+      let number2 = 7;
+      document.write(number1 + number2);
+      document.write("<br />");
+      document.write(number1 - number2);
+      document.write("<br>");
+      document.writeln(number1 * number2);
+      document.write("<br>");
+      document.writeln(number1 / number2);
+      document.write("<br>");
+      document.writeln(number1 % number2);
+      document.write("<br>");
+      document.write(number1 > number2);
+      document.write("<br>");
+      // 객체 = object = 이름 + 값
+      // 내장객체 = 자바스크립트 안에 모듈이나 패키지
+      // Math
+      // PI : 프로퍼티
+      document.write(Math.PI);
+      document.write("<br>");
+      // ceil() : 메소드
+      document.write(Math.ceil(3.14159));
+      document.write("<br>");
+    </script>
+    <script src="d3_index.js"></script>
+  </body>
+</html>
