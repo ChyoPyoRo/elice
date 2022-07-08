@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        border: solid 1px black;
+      }
+    </style>
+  </head>
+  <body style="background-color: white">
+    <h2>python</h2>
+    <p class="box">
+      python is<span
+        style="background-color: gray"
+        onclick="
+        document.querySelector('p').innerHTML=`Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae vero
+        at, quo accusantium similique nihil ea sapiente beatae et doloribus nulla
+        ipsam corrupti quaerat distinctio odit quidem possimus dolore id?`
+      "
+        >....</span
+      >
+    </p>
+
+    <h2>자바스크립트</h2>
+    <p class="box" id="javascript-explain">
+      Javascript is<span
+        style="background-color: gray; padding: 0 5px; cursor: pointer"
+        onclick="
+              document.querySelector('#javascript-explain').innerHTML = `Javascript is Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore cumque dolore fugiat quia dolores? Sed sit quod, perferendis, adipisci voluptate mollitia nemo earum aperiam minus ab repellat consequatur repellendus rem.`
+              "
+      >
+        ...
+      </span>
+    </p>
+    <h2>파이썬</h2>
+    <p class="box">
+      Python is
+      <span
+        style="background-color: gray; padding: 0 5px; cursor: pointer"
+        onclick="
+        this.style.display = 'none';
+        document.querySelector('#python-explain').style.display = 'inline';
+        "
+      >
+        ...
+      </span>
+      <span id="python-explain" style="display: none">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore cumque
+        dolore fugiat quia dolores? Sed sit quod, perferendis, adipisci
+        voluptate mollitia nemo earum aperiam minus ab repellat consequatur
+        repellendus rem.
+      </span>
+    </p>
+    <input
+      type="button"
+      value="night"
+      onclick="
+        if(this.value == 'night'){
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';
+        document.querySelector('.box').style.border = '1px solid white'
+        this.value='day'}
+        else if(this.value == 'day'){
+            document.querySelector('body').style.backgroundColor = 'white';
+            document.querySelector('body').style.color = 'black';
+            document.querySelector('.box').style.border = '1px solid black'
+            this.value='night'
+
+        }
+    "
+    />
+  </body>
+</html>
