@@ -3,3 +3,7 @@ h2 {
     color : black;
     background-color: azure;
 }
+
+.subTitle{
+    font-weight: bolder;
+}
